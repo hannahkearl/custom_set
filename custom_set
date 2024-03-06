@@ -1,0 +1,22 @@
+class CustomSet:
+    def __init__self = []
+
+    def add(self, ingredient):
+
+    def remove(self, ingredient):
+
+    def as_list(self):
+    
+    def clear(self):
+
+def main():
+
+
+
+
+
+
+
+
+if __name__ == "__main__":
+    main()
