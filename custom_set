@@ -1,19 +1,19 @@
 class CustomSet:
-    def __init__self:
-        self.ingredients: []
+    def __init__(self):
+        self.ingredients = []
 
-    def add(self, ingredient):\
+    def add(self, ingredient):
         if ingredient not in self.ingredients:
             self.ingredients.append(ingredient)
 
     def remove(self, ingredient):
         if ingredient in self.ingredients:
-            self.ingrdedients.remove(ingredient)
+            self.ingredients.remove(ingredient)
         else:
             return "Ingredient not in recipe"
 
     def as_list(self):
-        return self.ingredients = []
+        return self.ingredients
 
     def clear(self):
         self.ingredients = []
@@ -32,11 +32,11 @@ def main():
     print(chicken_noodle_soup.as_list())
     try:
         chicken_noodle_soup.remove("Tomato")
-        except KeyError:
+    except KeyError:
             print("Ingredient not found")
-        chicken_noodle_soup.clear()
-        print("Clearing:")
-        print(chicken_noodle_soup.as_list())
+    chicken_noodle_soup.clear()
+    print("Clearing:")
+    print(chicken_noodle_soup.as_list())
 
 if __name__ == "__main__":
     main()
